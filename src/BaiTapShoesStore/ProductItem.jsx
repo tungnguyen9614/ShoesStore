@@ -11,8 +11,8 @@ export default class ProductItem extends Component {
           <div className="card-body">
             <h4 className="card-title">{shoe.name}</h4>
             <p style={{fontSize:20,color:"red",fontWeight:500}} className="card-text">Price: {shoe.price}$</p>
-            <button className="btn btn-info mx-5" data-bs-toggle="modal" data-bs-target="#modalDetail" onClick={()=>{viewDetail(shoe)}}>Detail</button>
-            <button className="btn btn-success" onClick={()=>{addCart(shoe)}}>Add Cart</button>
+            <button className="btn btn-info me-5" data-bs-toggle="modal" data-bs-target="#modalDetail" onClick={()=>{viewDetail(shoe)}}>Detail</button>
+            <button className="btn btn-success" onClick={()=>{addCart(shoe)}}><span>Add Cart </span> <i style={{marginLeft:10 }} className="fa-solid fa-cart-shopping"></i></button> 
           </div>
         </div>
       </div>

@@ -51,11 +51,9 @@ export default class ModalCart extends Component {
                               border: "1px solid black",
                               borderRadius: "50%",
                               background: "#8080802b",
-                              width: "20px",
-                              height: "20px",
-                              lineHeight: "0px",
+                              padding: "0px 5px 0px 5px",
                               marginRight: "3px",
-                              fontSize: 20
+                              fontSize: 15
                             }}
                             onClick={()=>{changeQuantity(item.id, true)}}
                           >
@@ -67,11 +65,9 @@ export default class ModalCart extends Component {
                               border: "1px solid black",
                               borderRadius: "50%",
                               background: "#8080802b",
-                              width: "20px",
-                              height: "20px",
-                              lineHeight: "0px",
+                              padding: "0px 5px 0px 5px",
                               marginLeft: "3px",
-                              fontSize: 20
+                              fontSize: 15
                             }}
                             onClick={()=>{changeQuantity(item.id, false)}}
                           >
