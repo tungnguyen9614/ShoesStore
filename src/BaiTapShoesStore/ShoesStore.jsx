@@ -45,8 +45,11 @@ export default class ShoesStore extends Component {
     let index = cartArrClone.findIndex((item) => item.id === id);
     if (change) {
       cartArrClone[index].quantity += 1;
-    } else if (cartArrClone[index].quantity > 1) {
+    } else if (cartArrClone[index].quantity > 0) {
       cartArrClone[index].quantity -= 1;
+      if (cartArrClone[index].quantity === 0) {
+        cartArrClone.splice(index,1);
+      }
     }
 
     this.setState({
